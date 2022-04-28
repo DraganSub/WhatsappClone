@@ -32,7 +32,7 @@ class RegisterPage extends React.Component {
         <p className="formQuestion">
           Already have an account?{" "}
           <Link className="link--noDecor" to="/login">
-            Sign In
+            Sign Up
           </Link>
         </p>
       </FormLayout>
