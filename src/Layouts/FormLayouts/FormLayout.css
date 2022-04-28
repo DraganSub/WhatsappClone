@@ -1,18 +1,47 @@
 .formContainer {
-  background-color: lightblue;
+  background-color: var(--main-bg-color);
   max-width: 80%;
   margin: auto;
   height: 100vh;
+  position: relative;
 }
 
 .form--positionMid {
   max-width: 50%;
   width: 100%;
-  height: 50%;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto auto;
-  background-color: lightcoral;
+  background-color: var(--form-layout-bgColor);
+  border-radius: 15px;
+}
+
+.whatsapp-logo {
+  font-size: 50px;
+  padding: 10px;
+  color: var(--icon-bright-highlight);
+}
+
+.whatsapp-logo--positionMid {
+  text-align: center;
+}
+
+.formTitle {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  color: var(--primary-text-strong);
+  line-height: 28px;
+}
+
+.form--displayFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+  margin: auto;
 }

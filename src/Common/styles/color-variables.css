@@ -1,5 +1,7 @@
 :root {
   --header-bg-color: #202c33;
+  --form-border-primary: rgba(233, 237, 239, 0.12);
+  --form-layout-bgColor: #202c33;
   --main-backgound-dark: #0a1014;
   --main-bg-color: #111b21;
   --primary-text-strong: #e9edef;
@@ -21,4 +23,5 @@
   --footer-options-icons-primary: #8696a0;
   --footer-default-background: #202c33;
   --new-msg-input-primary-bgColor: #2a3942;
+  --icon-bright-highlight: #00a884;
 }

@@ -1,0 +1,43 @@
+.signInBtn {
+  width: 200px;
+  padding: 13px;
+  background: var(--icon-bright-highlight);
+  color: var(--primary-text-strong);
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.padding--30px {
+  padding: 30px;
+}
+.loginForm--input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  background: transparent;
+  border: 1px solid var(--form-border-primary);
+  border-radius: 7.5px;
+  color: var(--primary-text-strong);
+}
+
+.loginForm--input:focus {
+  background: transparent;
+}
+
+.loginForm--input:active {
+  background: transparent;
+}
+
+.formQuestion {
+  text-align: center;
+  color: var(--secondary-text-strong);
+  padding-bottom: 20px;
+}
+
+.link--noDecor {
+  text-decoration: none;
+  color: var(--icon-bright-highlight);
+}
