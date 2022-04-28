@@ -1,0 +1,26 @@
+.whatsapp-logo--notFound {
+  font-size: 100px;
+  padding: 20px;
+  color: var(--icon-bright-highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound--positionMid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marker404 {
+  font-size: 80px;
+  color: var(--icon-bright-highlight);
+  text-align: center;
+}
+
+.notFound--text {
+  font-size: 30px;
+  color: var(--icon-bright-highlight);
+}

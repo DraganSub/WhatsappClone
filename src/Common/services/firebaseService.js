@@ -7,7 +7,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBhqCJtswMqJX5PmwNlSl4jPHl2VnO94ng",
@@ -27,7 +27,6 @@ class FirebaseService {
     this.auth = getAuth(this.app);
     this.googleProvider = new GoogleAuthProvider();
     this.database = getDatabase();
-    console.log(this.auth.authUser);
   }
 
   doCreateUserWithEmailAndPassword = (email, password) => {

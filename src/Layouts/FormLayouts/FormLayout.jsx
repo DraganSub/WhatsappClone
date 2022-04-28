@@ -5,12 +5,13 @@ const FormLayout = (props) => {
     <div className="formContainer">
       <div className="form--positionMid">
         <div className="whatsapp-logo--positionMid">
-          <i class="fa-brands fa-whatsapp whatsapp-logo"></i>
+          <i className="fa-brands fa-whatsapp whatsapp-logo"></i>
         </div>
         <div className="formTitle">{props.formTitle}</div>
-        <div className="form--displayFlex">
-          <form onSubmit={props.onSubmitForm}>{props.children}</form>
-        </div>
+
+        <form onSubmit={props.onSubmitForm} className="form--displayFlex">
+          {props.children}
+        </form>
       </div>
     </div>
   );
