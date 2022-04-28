@@ -1,0 +1,32 @@
+.messageContainer--positionMiddle {
+  max-width: 90%;
+  margin: 0 auto;
+  width: 100%;
+  height: max-content;
+}
+
+.messageContainer--right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.messageContainer--left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message-elem--padding20 {
+  padding: 3px 0px 0px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.msg:last-child {
+  padding-bottom: 50px;
+}
+
+.lastMsg {
+  padding-bottom: 50px;
+}

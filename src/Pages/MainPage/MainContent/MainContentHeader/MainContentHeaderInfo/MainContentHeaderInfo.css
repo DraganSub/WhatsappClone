@@ -1,0 +1,30 @@
+.main-header-info {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.user-img__img {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.user-info__userName {
+  font-size: 17px;
+  color: var(--primary-text-strong);
+  font-weight: 400;
+}
+
+.user-info__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.user-info__lastSeenUpdate {
+  font-size: 13px;
+  color: var(--secondary-text-light-grey);
+  letter-spacing: 0.5px;
+  cursor: auto;
+}

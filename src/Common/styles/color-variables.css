@@ -1,0 +1,24 @@
+:root {
+  --header-bg-color: #202c33;
+  --main-backgound-dark: #0a1014;
+  --main-bg-color: #111b21;
+  --primary-text-strong: #e9edef;
+  --secondary-text-strong: #d1d7db;
+  --secondary-text-light-grey: #8696a0;
+  --icons-color: #aebac1;
+  --chatlist-icon-unseen: #8696a0;
+  --chatlist-icon-seen: #53bdeb;
+  --conversation-panel-border: rgba(233, 237, 239, 0.12);
+  --border-list: rgba(134, 150, 160, 0.15);
+  --background-default-hover: #202c33;
+  --background-default-active: #2a3942;
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 11, 20, 26;
+  --default-msg-background: #202c33;
+  --message-primary: #e9edef;
+  --message-time-primary: #ffffff99;
+  --sent-message-primary: #005c4b;
+  --footer-options-icons-primary: #8696a0;
+  --footer-default-background: #202c33;
+  --new-msg-input-primary-bgColor: #2a3942;
+}

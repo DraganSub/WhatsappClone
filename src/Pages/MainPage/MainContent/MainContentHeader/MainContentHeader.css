@@ -1,0 +1,27 @@
+.main-content-header {
+  background: var(--header-bg-color);
+  width: 100%;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid var(--border-list);
+}
+
+.main-content-header__right-options {
+  width: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-content-header__searchIcon {
+  height: 17px;
+  color: var(--secondary-text-strong);
+  padding-right: 10px;
+}
+
+.main-content-header__optionsIcon {
+  height: 17px;
+  padding-right: 10px;
+}

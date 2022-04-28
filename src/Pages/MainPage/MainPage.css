@@ -1,0 +1,18 @@
+.MainPage {
+  display: flex;
+}
+
+.MainPage__sidebar {
+  width: 100%;
+  max-width: 30%;
+  background: var(--main-bg-color);
+  overflow-y: auto;
+  height: calc(100vh - 40px);
+}
+
+.MainPage__main-content {
+  width: 100%;
+
+  max-width: 70%;
+  height: calc(100vh - 40px);
+}

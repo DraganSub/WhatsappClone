@@ -1,0 +1,90 @@
+.message-elem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding: 6px 7px 8px 9px;
+  background: var(--default-msg-background);
+  border-radius: 10px;
+  z-index: 100;
+  border-top-left-radius: 0px;
+  color: var(--message-primary);
+}
+
+.user-message-elem {
+  position: relative;
+  flex-direction: row;
+  padding: 6px 7px 8px 9px;
+  background: var(--sent-message-primary);
+  border-radius: 10px;
+  z-index: 100;
+  border-top-right-radius: 0px;
+  color: var(--message-primary);
+}
+
+.user-message-elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -9px;
+  width: 15px;
+  height: 10px;
+  background: var(--sent-message-primary);
+  border-bottom-right-radius: 200px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.message-elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 15px;
+  height: 10px;
+  background: var(--default-msg-background);
+  border-bottom-left-radius: 200px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.message-elem__content {
+  padding-right: 20px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  padding-right: 70px;
+}
+.message-elem__content--user {
+  padding-right: 70px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.message-elem__timeSent {
+  font-size: 11px;
+  color: var(--message-time-primary);
+}
+.message-elem__timeSent--user {
+  font-size: 11px;
+  color: var(--message-time-primary);
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+}
+.border-box {
+  overflow-wrap: break-word;
+}
+
+.border-box--user {
+  display: block;
+}
+
+.box--position--user {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.message-elem__timeSent {
+  padding-right: 10px;
+}

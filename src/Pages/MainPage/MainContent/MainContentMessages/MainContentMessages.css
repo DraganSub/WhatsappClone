@@ -1,0 +1,11 @@
+.main-content-messages {
+  background: url("../../../../Common/img/whatsapp-bg.png");
+  background-repeat: repeat;
+  height: calc(100vh - 104px);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-left: 1px solid var(--border-list);
+  position: relative;
+}

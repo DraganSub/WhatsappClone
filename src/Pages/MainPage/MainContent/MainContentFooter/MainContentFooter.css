@@ -1,0 +1,37 @@
+.MainContentFooter-container {
+  position: sticky;
+  bottom: 0;
+  max-width: calc(1493px - 3%);
+  width: 100%;
+
+  background-color: var(--footer-default-background);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+  justify-content: space-evenly;
+  border-left: 1px solid var(--conversation-panel-border);
+}
+
+.Main-content-msgInput {
+  width: 100%;
+  max-width: 80%;
+  line-height: 30px;
+  font-size: 15px;
+  text-indent: 20px;
+  color: var(--secondary-text-strong);
+  background-color: var(--new-msg-input-primary-bgColor);
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 7.5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.footer--options {
+  font-size: 22px;
+  color: var(--footer-options-icons-primary);
+  line-height: 30px;
+  cursor: pointer;
+}

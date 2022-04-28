@@ -1,0 +1,74 @@
+.unseen-check {
+  color: var(--chatlist-icon-unseen);
+}
+.seen-check {
+  color: var(--chatlist-icon-seen);
+}
+.fa-check-double {
+  font-size: 14px;
+}
+/* Message user img container */
+
+.message {
+  max-height: 72px;
+  min-height: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+
+.active {
+  background-color: var(--background-default-active);
+}
+
+.message:hover {
+  background-color: var(--background-default-hover);
+}
+.message__img-container {
+  padding: 10px;
+}
+.message__img {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+/* Message user info container */
+
+.message__info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  border-top: 1px solid var(--border-list);
+}
+
+.message__info-userName {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+.message__info-userName {
+  font-size: 17.5px;
+  color: var(--primary-text-strong);
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+}
+.message__info {
+  display: flex;
+  gap: 5px;
+}
+
+.message__info-content {
+  font-size: 14px;
+  color: var(--secondary-text-strong);
+}
+
+.message__info-time {
+  padding-right: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: var(--secondary-text-light-grey);
+}

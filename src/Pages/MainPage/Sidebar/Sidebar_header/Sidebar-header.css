@@ -1,0 +1,31 @@
+.sidebar-header {
+  background: var(--header-bg-color);
+  width: 100%;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-header__profile-img {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sidebar-header__left-position {
+  flex: 50%;
+  align-items: center;
+  flex-grow: 1;
+}
+.sidebar-header__right-position {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  justify-content: flex-end;
+}
+
+.sidebar-header__img {
+  padding: 0px 15px;
+  cursor: pointer;
+}
