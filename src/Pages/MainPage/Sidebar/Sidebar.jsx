@@ -8,7 +8,11 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div>
-        <SidebarHeader />
+        <SidebarHeader
+          doSignOut={this.props.doSignOut}
+          handleSettingsOpen={this.props.handleSettingsOpen}
+          isSettingsActive={this.props.isSettingsActive}
+        />
         <SidebarSearch />
         <div className="sidebar-header__messageWrap">
           <Message

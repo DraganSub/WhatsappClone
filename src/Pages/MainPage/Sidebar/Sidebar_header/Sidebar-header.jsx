@@ -4,6 +4,7 @@ import ProfilePlaceholder from "../../../../Common/img/placeholder.png";
 import StatusIcon from "../../../../Common/img/statusIcon.png";
 import NewMessageIcon from "../../../../Common/img/newMessage.png";
 import OptionsIcon from "../../../../Common/img/settingsIcon.png";
+import { Link } from "react-router-dom";
 class SidebarHeader extends React.Component {
   render() {
     return (
@@ -32,10 +33,35 @@ class SidebarHeader extends React.Component {
           </div>
           <div className="sidebar-header__options">
             <img
-              className="sidebar-header__options-img sidebar-header__img"
+              className={`sidebar-header__options-img sidebar-header__img ${
+                this.props.isSettingsActive
+                  ? "sidebar-header__img--active"
+                  : "sidebar-header__img--notActive"
+              } `}
               src={OptionsIcon}
               alt="options"
+              onClick={this.props.handleSettingsOpen}
             />
+            <div
+              className={`options-cloud ${
+                this.props.isSettingsActive
+                  ? "options-cloud--active"
+                  : "options-cloud--notActive"
+              }`}
+            >
+              <p className="option-cloud__option">New group</p>
+              <p className="option-cloud__option">Marked messages</p>
+              <p className="option-cloud__option">Settings</p>
+              <Link to="/login">
+                {" "}
+                <p
+                  className="option-cloud__option"
+                  onClick={this.props.doSignOut}
+                >
+                  Sign out
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

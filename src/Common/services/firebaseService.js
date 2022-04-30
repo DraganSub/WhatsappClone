@@ -39,7 +39,7 @@ class FirebaseService {
 
   doSignInWithGoogle = () => signInWithPopup(this.googleProvider);
 
-  doSignOut = () => signOut();
+  doSignOut = () => signOut(this.auth).then(() => console.log("logut success"));
 }
 
 export default FirebaseService;

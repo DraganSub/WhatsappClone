@@ -7,6 +7,8 @@ import { inject, observer } from "mobx-react";
 import "./LoginPage.css";
 import LoginStore from "./LoginStore";
 import Spinner from "../../Components/Spinner/Spinner";
+import RedirectTo from "../../Common/Redirect";
+
 class LoginPage extends React.Component {
   render() {
     const loginStore = this.props.loginStore;
