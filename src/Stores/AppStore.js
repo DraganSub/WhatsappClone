@@ -2,7 +2,6 @@ import { onAuthStateChanged } from "@firebase/auth";
 import { action, makeObservable, observable } from "mobx";
 import FirebaseService from "../Common/services/firebaseService";
 import SessionStore from "./SessionStore";
-import UserStore from "./UserStore";
 
 class AppStore {
   constructor() {

@@ -12,6 +12,7 @@ class MainPageStore {
       isSettingsActive: observable,
       handleSettingsActive: action,
       handleSettingsActiveInitialState: action,
+      checkForUser: action,
     });
   }
 
@@ -29,6 +30,13 @@ class MainPageStore {
     this.sessionStore.doSignOut();
     this.sessionStore.setAuthenticated(false);
     this.handleSettingsActiveInitialState();
+  };
+
+  checkForUser = () => {
+    const userStore = this.userStore;
+    if (userStore.user.length === 0) {
+      userStore.getUser();
+    }
   };
 }
 

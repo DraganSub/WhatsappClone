@@ -9,14 +9,13 @@ import Spinner from "../../Components/Spinner/Spinner";
 class MainPage extends React.Component {
   componentDidUpdate() {
     if (this.props.mainPageStore.userStore.user.length === 0) {
-      this.props.mainPageStore.userStore.getUser();
+      this.props.mainPageStore.checkForUser();
     }
   }
 
   render() {
     const mainPageStore = this.props.mainPageStore;
-    const { currentUser, loading, user } = mainPageStore.userStore;
-    console.log(currentUser.length, user.length);
+    const { currentUser, loading } = mainPageStore.userStore;
 
     return (
       <MainLayout>

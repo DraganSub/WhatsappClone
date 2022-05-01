@@ -14,10 +14,7 @@ import { Navigate } from "react-router";
 class App extends React.Component {
   render() {
     let appPage;
-    /*const authUser = localStorage.getItem("authUser");  */
-    const { authenticated } = this.props.appStore.sessionStore;
     const { loading } = this.props.appStore;
-    console.log(loading, authenticated);
     const authUser = localStorage.getItem("authUser");
 
     if (loading) {

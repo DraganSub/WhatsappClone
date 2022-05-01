@@ -40,7 +40,6 @@ class UserStore {
       this.setUser(userData);
       this.setLoading(false);
     });
-    console.log(this.user);
   };
 
   get currentUser() {

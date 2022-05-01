@@ -1,6 +1,5 @@
 import React from "react";
 import "./Sidebar-header.css";
-import ProfilePlaceholder from "../../../../Common/img/placeholder.png";
 import StatusIcon from "../../../../Common/img/statusIcon.png";
 import NewMessageIcon from "../../../../Common/img/newMessage.png";
 import OptionsIcon from "../../../../Common/img/settingsIcon.png";
