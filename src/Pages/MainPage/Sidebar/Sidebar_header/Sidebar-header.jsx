@@ -9,13 +9,16 @@ class SidebarHeader extends React.Component {
   render() {
     return (
       <div className="sidebar-header">
-        <div className="sidebar-header__left-position">
-          <img
-            className="sidebar-header__profile-img"
-            src={ProfilePlaceholder}
-            alt="profile"
-          />
-        </div>
+        {this.props.currentUser.map((user) => (
+          <div className="sidebar-header__left-position" key={user.uid}>
+            <img
+              className="sidebar-header__profile-img"
+              src={user.imgLink}
+              alt="profile"
+            />
+          </div>
+        ))}
+
         <div className="sidebar-header__right-position">
           <div className="sidebar-header__status-img">
             <img

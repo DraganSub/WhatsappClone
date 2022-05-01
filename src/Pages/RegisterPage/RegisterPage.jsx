@@ -30,6 +30,14 @@ class RegisterPage extends React.Component {
             onChange={(e) => registerStore.setUsername(e)}
           />
           <Input
+            type="text"
+            placeholder="Img Link"
+            className="loginForm--input"
+            value={registerStore.imgLink}
+            onChange={(e) => registerStore.setImgLink(e)}
+          />
+
+          <Input
             type="email"
             placeholder="Email"
             className="loginForm--input"

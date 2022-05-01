@@ -11,11 +11,13 @@ class RegisterStore {
       password: observable,
       repeatPassword: observable,
       loading: observable,
+      imgLink: observable,
       setUsername: action,
       setEmail: action,
       setPassword: action,
       setRepeatPassword: action,
       setLoading: action,
+      setImgLink: action,
     });
   }
 
@@ -25,6 +27,11 @@ class RegisterStore {
   password = "";
   repeatPassword = "";
   loading = false;
+  imgLink = "";
+
+  setImgLink = (e) => {
+    this.imgLink = e.currentTarget.value;
+  };
 
   setUsername = (e) => {
     this.username = e.currentTarget.value;
@@ -50,7 +57,8 @@ class RegisterStore {
         event,
         this.username,
         this.email,
-        this.password
+        this.password,
+        this.imgLink
       );
       this.setLoading(false);
     });

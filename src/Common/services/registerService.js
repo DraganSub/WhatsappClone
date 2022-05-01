@@ -6,21 +6,8 @@ class RegisterService {
     this.firebaseService = new FirebaseService();
   }
 
-  onSubmitRegister = async (event, username, email, password) => {
+  onSubmitRegister = async (event, username, email, password, imgLink) => {
     event.preventDefault();
-    /*     const authUser =
-      await this.firebaseService.doCreateUserWithEmailAndPassword(
-        email,
-        password
-      );
-    this.firebaseService.set(
-      ref(this.firebaseService.database, "users/" + authUser.user.uid),
-      {
-        uid: authUser.user.uid,
-        username: username,
-        email: email,
-        createdAt: serverTimestamp(),
-      } );*/
     this.firebaseService
       .doCreateUserWithEmailAndPassword(email, password)
       .then((authUser) => {
@@ -29,6 +16,7 @@ class RegisterService {
           uid: uid,
           username: username,
           email: email,
+          imgLink: imgLink,
           createdAt: serverTimestamp(),
         });
       });

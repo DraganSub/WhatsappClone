@@ -12,6 +12,7 @@ class Sidebar extends React.Component {
           doSignOut={this.props.doSignOut}
           handleSettingsOpen={this.props.handleSettingsOpen}
           isSettingsActive={this.props.isSettingsActive}
+          currentUser={this.props.currentUser}
         />
         <SidebarSearch />
         <div className="sidebar-header__messageWrap">
