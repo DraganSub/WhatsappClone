@@ -2,7 +2,6 @@
   max-width: 90%;
   margin: 0 auto;
   width: 100%;
-  height: max-content;
 }
 
 .messageContainer--right {
@@ -24,7 +23,7 @@
 }
 
 .msg:last-child {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .lastMsg {

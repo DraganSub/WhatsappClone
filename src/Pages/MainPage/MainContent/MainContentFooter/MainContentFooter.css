@@ -1,9 +1,8 @@
 .MainContentFooter-container {
-  position: sticky;
+  position: absolute;
   bottom: 0;
   max-width: calc(1493px - 3%);
   width: 100%;
-
   background-color: var(--footer-default-background);
   padding: 10px;
   display: flex;
@@ -12,6 +11,11 @@
   z-index: 100;
   justify-content: space-evenly;
   border-left: 1px solid var(--conversation-panel-border);
+}
+
+.send {
+  background-color: transparent;
+  border: none;
 }
 
 .Main-content-msgInput {

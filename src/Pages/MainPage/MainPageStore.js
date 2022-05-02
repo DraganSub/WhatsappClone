@@ -10,19 +10,27 @@ class MainPageStore {
     this.userStore = new UserStore();
     makeObservable(this, {
       isSettingsActive: observable,
+      isNewMsgWindowActive: observable,
       handleSettingsActive: action,
       handleSettingsActiveInitialState: action,
       checkForUser: action,
+      handleMessageActive: action,
     });
   }
 
   isSettingsActive = false;
+  isNewMsgWindowActive = false;
 
+  handleMessageActive = () => {
+    this.isNewMsgWindowActive = !this.isNewMsgWindowActive;
+  };
   handleSettingsActive = () => {
     this.isSettingsActive = !this.isSettingsActive;
   };
+
   handleSettingsActiveInitialState = () => {
     this.isSettingsActive = false;
+    this.isNewMsgWindowActive = false;
   };
 
   signOut = async () => {
@@ -34,8 +42,10 @@ class MainPageStore {
 
   checkForUser = () => {
     const userStore = this.userStore;
-    if (userStore.user.length === 0) {
+    if (userStore.user.length === 0 || userStore.users.length === 0) {
       userStore.getUser();
+      userStore.getUsers();
+      userStore.getCurrentContact();
     }
   };
 }

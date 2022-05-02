@@ -11,7 +11,7 @@ class LoginService {
   };
   onSubmitGoogleLogin = async (event) => {
     event.preventDefault();
-    const socialAuthUser = await this.firebaseService.doSignInWithGoogle();
+    /*  const socialAuthUser = await this.firebaseService.doSignInWithGoogle(); */
   };
 }
 

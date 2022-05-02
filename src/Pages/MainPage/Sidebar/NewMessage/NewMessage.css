@@ -1,0 +1,31 @@
+.newMessage {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  height: 100vh;
+}
+
+.newMessage__header {
+  background-color: var(--header-bg-color);
+  height: 100px;
+  gap: 20px;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  color: var(--secondary-text-strong);
+}
+.newMessage__backBtn {
+  height: 30px;
+  aspect-ratio: 1;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 40px;
+}
+.newMessage__arrow-left {
+  font-size: 20px;
+  color: var(--secondary-text-strong);
+}
+.newMessage__title {
+  padding: 20px 20px;
+  font-size: 20px;
+}

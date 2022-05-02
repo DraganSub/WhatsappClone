@@ -6,6 +6,7 @@ import OptionsIcon from "../../../../Common/img/settingsIcon.png";
 import { Link } from "react-router-dom";
 class SidebarHeader extends React.Component {
   render() {
+    console.log(this.props.currentUser);
     return (
       <div className="sidebar-header">
         {this.props.currentUser.map((user) => (
@@ -31,6 +32,7 @@ class SidebarHeader extends React.Component {
               className="sidebar-header__newMsg-img sidebar-header__img"
               src={NewMessageIcon}
               alt="new-message"
+              onClick={this.props.handleMessageOpen}
             />
           </div>
           <div className="sidebar-header__options">

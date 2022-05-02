@@ -1,0 +1,54 @@
+/* Message user img container */
+
+.newContact {
+  max-height: 72px;
+  min-height: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+
+.newContact:hover {
+  background-color: var(--background-default-hover);
+}
+.newContact__img-container {
+  padding: 10px;
+}
+.newContact__img {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+/* Message user info container */
+
+.newContact__info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  border-top: 1px solid var(--border-list);
+}
+
+.newContact__info-userName {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+.newContact__info-userName {
+  font-size: 17.5px;
+  color: var(--primary-text-strong);
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+}
+.newContact__info {
+  display: flex;
+  gap: 5px;
+}
+
+.newContact__info-content {
+  font-size: 14px;
+  color: var(--secondary-text-strong);
+}

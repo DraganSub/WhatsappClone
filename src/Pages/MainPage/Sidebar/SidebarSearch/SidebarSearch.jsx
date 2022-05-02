@@ -10,6 +10,8 @@ class SidebarSearch extends React.Component {
           type="text"
           className="sidebar-search__input"
           placeholder="Search or start new chat"
+          value={this.props.search}
+          onChange={(e) => this.props.changeSearch(e)}
         />
       </div>
     );

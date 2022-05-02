@@ -18,6 +18,8 @@ class RegisterService {
           email: email,
           imgLink: imgLink,
           createdAt: serverTimestamp(),
+          whatsappStatus: "New to Whatsapp. Add me!",
+          contacts: [],
         });
       });
   };

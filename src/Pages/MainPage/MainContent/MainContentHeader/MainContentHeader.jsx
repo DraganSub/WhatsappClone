@@ -9,8 +9,8 @@ class MainContentHeader extends React.Component {
     return (
       <div className="main-content-header">
         <MainContentHeaderInfo
-          userImg={UserImgPlaceholder}
-          userName="John Doe"
+          userImg={this.props.userImg}
+          userName={this.props.username}
           lastSeenTime="today in 14:00h"
         />
         <div className="main-content-header__right-options">
