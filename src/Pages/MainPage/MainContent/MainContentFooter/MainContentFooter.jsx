@@ -3,6 +3,7 @@ import Input from "../../../../Components/Input/Input";
 import "./MainContentFooter.css";
 
 const MainContentFooter = (props) => {
+  const disabled = props.messageContent === "" ? true : false;
   return (
     <form
       onSubmit={(e) =>
@@ -26,7 +27,7 @@ const MainContentFooter = (props) => {
         onChange={(e) => props.setMessageContent(e)}
       />
 
-      <button className="send" type="submit">
+      <button className="send" type="submit" disabled={disabled}>
         <i className="fa-solid fa-share footer--options"></i>
       </button>
     </form>
